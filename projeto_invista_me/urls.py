@@ -34,7 +34,9 @@ urlpatterns = [
     path('investimentos/',views.investimentos ,name='investimentos'),  
     path('<int:idInvestimento>',views.detalhe ,name='detalhe'),  
     path('novoInvestimento/<int:idInvestimento>',views.alterar ,name='alterar'),
-    path('excluirInvestimento/<int:idInvestimento>',views.excluir ,name='excluir')
+    path('excluirInvestimento/<int:idInvestimento>',views.excluir ,name='excluir'),
+    path('alertareveraula/',views.alertaCodigoComBug ,name='alerta')
+    
     
 
 ]

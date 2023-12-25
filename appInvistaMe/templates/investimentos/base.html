@@ -21,8 +21,14 @@
             <strong class="nav-item nav-link" >Bem vindo {{user.get_username}}</strong>
          </li>          
           <li style="float: left">
-            <a class="nav-item nav-link" href="{% url 'logout' %}" >Logout</a>
+            <a class="nav-item nav-link" href="{% url 'alerta' %}" >Logout</a>
          </li>
+         <li style="float: left">
+          <form method="POST" action="{% url 'logout' %}">
+              {% csrf_token %}
+          <button class="btn btn-secondary" type="submit">Sair</button>
+          </form>
+         </li>         
 
 
           <li style="float: left">

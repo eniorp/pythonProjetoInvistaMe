@@ -54,6 +54,9 @@ def alterar(request,idInvestimento):
              formulario.save()
 
          return redirect('investimentos')
+def alertaCodigoComBug(request):
+    return render (request,'investimentos/alertareveraula.html')
+
 @login_required    
 def excluir(request,idInvestimento):
     try:

@@ -1,0 +1,11 @@
+{% extends 'investimentos/base.html' %} 
+{% block conteudo %} 
+<div class="container" >
+<form method='POST'>
+    {% csrf_token %}
+    <h1 style="text-align: center;" >ATENCAO esse codigo não funciona, professor irá liberar corração, rever aula, como alternativa, foi colocado o botão sair do lado</h1>
+    
+    <a class="navbar-brand" href="{% url 'investimentos' %}">Invista-me</a>
+</form>
+</div>
+{% endblock %} 
