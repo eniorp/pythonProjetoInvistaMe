@@ -41,7 +41,7 @@ def detalhe(request,idInvestimento):
     dados = {
         'dados': Investimento.objects.get(pk=idInvestimento) 
     }
-    return render (request,'Investimentos/detalhe.html',context=dados)
+    return render (request,'investimentos/detalhe.html',context=dados)
 @login_required
 def alterar(request,idInvestimento):
     investimento = Investimento.objects.get(pk=idInvestimento)
