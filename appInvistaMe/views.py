@@ -34,7 +34,7 @@ def investimentos(request):
 
     }    
 
-    return render (request,'Investimentos/investimentos.html',context=dados)
+    return render (request,'investimentos/investimentos.html',context=dados)
 
 def detalhe(request,idInvestimento):
     
